@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <!-- Aqui va el head -->
+   <%- include('partials/head') %> 
+
+  <body>
+    
+
+    <!-- Page content -->
+    <div class="ps-content">
+
+      <!-- Menu Section -->
+      <div class="ps-row ps-padding-64" id="menu">
+        <div class="ps-col l6 ps-padding-large">
+          <h1 class="ps-center">Detalle del Plato</h1>
+          <br />
+         
+            <!-- Detalle de Cada Plato -->
+            <h4><%= detallePlato.nombre %> </h4>
+            <p class="ps-text-grey">
+             <%= detallePlato.descripcion %> <%= detallePlato.precio %>
+            </p>
+            <img src="/images/<%= detallePlato.imagen %>" alt="imagen de <%= detallePlato.nombre %>">
+            <br />
+          
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <%- include('partials/footer') %> 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<% menuMostrar.forEach(plato => { %>
+    <!-- En la hoja de estilos, en a le puedo poner text-decoration: none, para que quite el subrayado de los links -->
+    <a href="/producto/<%= plato.id %> ">
+        <h4><%= plato.nombre %> </h4>
+            <p class="ps-text-grey">
+            <%= plato.descripcion %> <%= plato.precio %>
+            </p>
+        <img src="/images/<%= plato.imagen %>" alt="imagen de <%= plato.nombre %>">
+        <br />
+    </a>
+    <% }) %>
